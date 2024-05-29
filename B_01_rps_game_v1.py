@@ -1,3 +1,5 @@
+import random
+
 # Check that users have entered a valid
 # option based on a list
 def string_checker(question, valid_ans=('yes', 'no')):
@@ -112,6 +114,8 @@ while rounds_played < num_rounds:
     # If user choice is the exit code, break the loop
     if user_choice == "xxx":
         break
+
+    comp_choice = random.choice(rps_list[:-1])
 
     rounds_played += 1
 
